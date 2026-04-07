@@ -28,5 +28,5 @@ print(f"Accuracy : {accuracy : 0.4f}")
 
 # Visualize
 plt.figure(figsize=(20, 10))
-plot_tree(clf,  filled=True, feature_names=iris.feature_names, class_names=iris.target_names, rounded=True, precision=2)
+plot_tree(clf,  filled=True, feature_names=iris.feature_names, class_names=iris.target_names)
 plt.show()

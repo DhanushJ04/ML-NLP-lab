@@ -17,10 +17,10 @@ kmeans.fit(X)
 y_kmeans = kmeans.predict(X)
 
 # Visualize
-plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='viridis')
+plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50)
 
 # Plot
 centers = kmeans.cluster_centers_
-plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5, marker='s')
+plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200)
 plt.title("Data Clustered with K-Means")
 plt.show()

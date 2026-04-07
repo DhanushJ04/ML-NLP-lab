@@ -1,7 +1,6 @@
 import pandas
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 
 df = pandas.read_csv("CarCO2Data.csv")
 X = df[['Volume', 'Weight']]

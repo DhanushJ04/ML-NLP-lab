@@ -5,9 +5,6 @@ from sklearn.metrics import accuracy_score
 
 data = pd.read_csv('iris.csv')
 
-# Displaying the first five records from top
-print(data.head())
-
 X = data.drop('variety', axis=1)
 y = data['variety']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
